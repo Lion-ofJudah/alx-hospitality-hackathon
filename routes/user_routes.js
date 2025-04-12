@@ -1,7 +1,7 @@
 import express from 'express';
 import { registerUser, loginUser, getProfile, updateProfile, deleteAccount } from '../controller/user_controller.js';
 import feedbackRoutes from './feedback_route.js';  // Import feedback routes
-import reportRoutes from './report_route.js';      // Import report routes
+import reportRoutes from './Report_route.js';      // Import report routes
 import { protect } from '../middleware/auth.js'; // Middleware for JWT validation
 
 const router = express.Router();

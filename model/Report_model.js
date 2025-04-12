@@ -2,9 +2,9 @@ import mongoose from 'mongoose';
 
 const reportSchema = new mongoose.Schema(
   {
-    admin: {
+    user: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'Admin',
+      ref: 'User', // Reference to the User model
       required: true
     },
     subject: {

@@ -1,4 +1,4 @@
-import Report from '../model/Report_model.js';
+import Report from '../model/report_model.js';
 
 // CREATE
 export const createReport = async (req, res) => {
@@ -12,7 +12,7 @@ export const createReport = async (req, res) => {
 
 // READ ALL
 export const getAllReports = async (req, res) => {
-  const reports = await Report.find().populate('admin', 'username email');
+  const reports = await Report.find().populate('user', 'username email');
   res.json(reports);
 };
 
